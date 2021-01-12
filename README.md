@@ -10,7 +10,7 @@ Include the script *before* the ending BODY tag in HTML:
 ```
 
 ## Usage
-Instantiate ShoppingCart Class:
+Instantiate The ShoppingCart Class:
 ```javascript
 const SHOPPING_CART = new ShoppingCart();
 ```
@@ -19,7 +19,7 @@ Add item:
 
 ```javascript
 try {
-	CART.add({
+	SHOPPING_CART.add({
 		"id": 1,
 		"name": "ProductName",
 		"stock": 20,
