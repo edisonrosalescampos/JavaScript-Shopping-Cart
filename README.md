@@ -8,27 +8,24 @@ Include the script *before* the ending BODY tag in HTML
 ```html
 <script src="/js/shoppingcart.js"></script>
 ```
+<<<<<<< HEAD
 
 ## Usage
 
 Add item:
 
 ```javascript
-$.shoppingcart('add',{
-				'id': 123,
-				'image': 'path/to/image.png',
-				'name': 'ProductName',
-				'code': 'Product123',
-				'url': 'catalog/clothes/product/123',
-				'attributes': ['S', 'Black'],
-				'price': 30,
-				'count': 1
-			});
+try {
+	CART.add({
+		"id": 1,
+		"name": "ProductName",
+		"stock": 20,
+		"price": 300.00,
+		"discount": 10,
+	});
+} catch(msg) {
+	console.log(msg);
+}
 ```
 
-**Only *id* & *price* are required!**
-
-Edit item:
-```javascript
-$.shoppingcart('edit',{
-				'id': 123,
+**Only *id*, *stock* & *price* are required!**
