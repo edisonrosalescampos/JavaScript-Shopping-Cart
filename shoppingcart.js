@@ -198,7 +198,7 @@ class ShoppingCart {
 
 	// Returns total items quantity sum
 	getTotalQuantity() {
-		return this.products.length;
+		return parseInt( this.products.length );
 	}
 
 	// Returns true if there are not items in Cart
