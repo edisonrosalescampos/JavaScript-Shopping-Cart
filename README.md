@@ -3,14 +3,17 @@ This Library provides a simple way to implement a Shopping Cart with Vanilla Jav
 
 ## Installation
 
-Include the script *before* the ending BODY tag in HTML 
+Include the script *before* the ending BODY tag in HTML: 
 
 ```html
 <script src="/js/shoppingcart.js"></script>
 ```
-<<<<<<< HEAD
 
 ## Usage
+Instantiate ShoppingCart Class:
+```javascript
+const SHOPPING_CART = new ShoppingCart();
+```
 
 Add item:
 
@@ -21,7 +24,7 @@ try {
 		"name": "ProductName",
 		"stock": 20,
 		"price": 300.00,
-		"discount": 10,
+		"discount": 10
 	});
 } catch(msg) {
 	console.log(msg);
