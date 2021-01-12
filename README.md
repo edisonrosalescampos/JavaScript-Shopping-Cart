@@ -15,6 +15,14 @@ Instantiate The ShoppingCart Class:
 const SHOPPING_CART = new ShoppingCart();
 ```
 
+Or
+
+```javascript
+const SHOPPING_CART = new ShoppingCart({
+	"taxPercent" = 19
+});
+```
+
 Add item:
 
 ```javascript
