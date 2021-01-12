@@ -91,7 +91,7 @@ SHOPPING_CART.clear();
 Get All Cart Items:
 
 ```javascript
-// Returns an objects array
+// Returns an objects array. Each object has the following keys: {"id", "name", "stock", "quantity", "price", "discount", "subtotal"}
 let products = SHOPPING_CART.getContent();
 ```
 
