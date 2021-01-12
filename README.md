@@ -15,7 +15,7 @@ Instantiate The ShoppingCart Class:
 const SHOPPING_CART = new ShoppingCart();
 ```
 
-The class has six initial properties: 
+The class constructor method has seven initial properties: 
 ```javascript
 // { 'products', 'subtotal', 'tax', 'total', 'decimals', 'taxPercent', 'increment'}
 ```
