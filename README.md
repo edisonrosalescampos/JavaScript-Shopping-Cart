@@ -133,4 +133,4 @@ SHOPPING_CART.isEmpty();
 
 ## Authors
 
-[Edison Rosales](http://codelatam.com/?ref=46)
+* [Edison Rosales](http://codelatam.com/?ref=46)
