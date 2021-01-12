@@ -18,7 +18,7 @@ const SHOPPING_CART = new ShoppingCart();
 
 The class constructor method has seven initial properties: 
 ```javascript
-// { 'products', 'subtotal', 'tax', 'total', 'decimals', 'taxPercent', 'increment'}
+// {"products", "subtotal", "tax", "total", "decimals", "taxPercent", "increment"}
 ```
 
 Add a new item:
