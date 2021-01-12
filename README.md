@@ -3,7 +3,7 @@ This Library provides a simple way to implement a Shopping Cart with Vanilla Jav
 
 ## Installation
 
-Include the script *before* the </body> closing tag in HTML: 
+Include the script *before* the BODY closing tag in HTML: 
 
 ```html
 <script src="/js/shoppingcart.js"></script>
@@ -106,20 +106,27 @@ SHOPPING_CART.getTotalQuantity();
 Get Cart SubTotal:
 
 ```javascript
-// Returns a float
+// Returns a float number
 SHOPPING_CART.getSubTotal();
 ```
 
 Get Cart Tax:
 
 ```javascript
-// Returns a float
+// Returns a float number
 SHOPPING_CART.getTax();
 ```
 
 Get Cart Total:
 
 ```javascript
-// Returns a float
+// Returns a float number
 SHOPPING_CART.getTotal();
+```
+
+Check Cart is Empty:
+
+```javascript
+// Returns a boolean
+SHOPPING_CART.isEmpty();
 ```
