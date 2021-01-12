@@ -37,7 +37,7 @@ let settings = {
 Add a new item:
 
 ```javascript
-// The product quantity by default is 1
+// You can also pass a value for quantity property. By default is 1. 
 try {
 	SHOPPING_CART.add({
 		"id": 1,
@@ -106,20 +106,20 @@ SHOPPING_CART.getTotalQuantity();
 Get Cart SubTotal:
 
 ```javascript
-// Returns an float
+// Returns a float
 SHOPPING_CART.getSubTotal();
 ```
 
 Get Cart Tax:
 
 ```javascript
-// Returns an float
+// Returns a float
 SHOPPING_CART.getTax();
 ```
 
 Get Cart Total:
 
 ```javascript
-// Returns an float
+// Returns a float
 SHOPPING_CART.getTotal();
 ```
