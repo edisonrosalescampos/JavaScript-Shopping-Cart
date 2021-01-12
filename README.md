@@ -75,15 +75,10 @@ Clear Cart:
 SHOPPING_CART.clear();
 ```
 
-Get All Items:
-
-```javascript
-let products = SHOPPING_CART.getContent();
-```
-
 Get All Cart Items:
 
 ```javascript
+// Returns an objects array
 let products = SHOPPING_CART.getContent();
 ```
 
@@ -91,5 +86,6 @@ let products = SHOPPING_CART.getContent();
 Get Total Items Quantity:
 
 ```javascript
-let products = SHOPPING_CART.getContent();
+// Returns an integer
+let products = SHOPPING_CART.getTotalQuantity();
 ```
