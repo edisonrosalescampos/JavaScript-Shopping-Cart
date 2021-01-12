@@ -124,7 +124,7 @@ Get Cart Total:
 SHOPPING_CART.getTotal();
 ```
 
-Check Cart is Empty:
+Check If Cart is Empty:
 
 ```javascript
 // Returns a boolean
