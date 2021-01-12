@@ -87,5 +87,26 @@ Get Total Items Quantity:
 
 ```javascript
 // Returns an integer
-let products = SHOPPING_CART.getTotalQuantity();
+SHOPPING_CART.getTotalQuantity();
+```
+
+Get Cart SubTotal:
+
+```javascript
+// Returns an float
+SHOPPING_CART.getSubTotal();
+```
+
+Get Cart Tax:
+
+```javascript
+// Returns an float
+SHOPPING_CART.getTax();
+```
+
+Get Cart Total:
+
+```javascript
+// Returns an float
+SHOPPING_CART.getTotal();
 ```
