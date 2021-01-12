@@ -15,12 +15,9 @@ Instantiate The ShoppingCart Class:
 const SHOPPING_CART = new ShoppingCart();
 ```
 
-Or
-
+The class has six initial properties: 
 ```javascript
-const SHOPPING_CART = new ShoppingCart({
-	"taxPercent" = 19
-});
+// { 'products', 'subtotal', 'tax', 'total', 'decimals', 'taxPercent', 'increment'}
 ```
 
 Add item:
