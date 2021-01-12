@@ -4,7 +4,7 @@
  * Edison Rosales. v1.0. Created on Jan 9th, 2021.
  * Any doubt? Send me a message to edisonrosales@gmail.com.
  */
-class Cart {
+class ShoppingCart {
 	constructor( content = {} ) {
 		this.products = ( content.products || [] );
 		this.subtotal = ( content.subtotal || 0 );
@@ -19,11 +19,11 @@ class Cart {
 	add( content = {} ) {		
 		// Checks for required keys
 		if ( !content.id || !content.stock || !content.price ) {
-    	throw "'id', 'stock' or 'price' is not defined!";
-    	return false;
-    }
+	    	throw "'id', 'stock' or 'price' is not defined!";
+	    	return false;
+    	}
 
-    // Checks if item is already in Cart
+    	// Checks if item is already in Cart
 		let index = this.exists( content.id );
 
 		if ( index === null ) {
@@ -32,7 +32,7 @@ class Cart {
 			// Checks if stock is enough
  			if (  parseInt( content.stock ) < parseInt( content.quantity ) || parseInt( content.stock ) < parseInt( this.increment ) ) { 
 				throw "Stock is not enough!";
-    		return false;
+    			return false;
 			}
 
 			this.products.push({
@@ -55,7 +55,7 @@ class Cart {
 			// Checks if there is enough stock
 			if ( parseInt( this.products[index].stock ) < ( parseInt( this.products[index].quantity ) + parseInt( this.increment ) ) ) {
 				throw "Stock is not enough!";
-    		return false;
+    			return false;
 			}
 
 			// Increases the current item quantity
@@ -78,17 +78,17 @@ class Cart {
 	remove( content = {} ) {
 		// Checks for required keys
 		if ( !content.id ) {
-    	throw "'id' is not defined!";
-    	return false;
-    }
+    		throw "'id' is not defined!";
+    		return false;
+    	}
 
-    // Checks if item is already in Cart
+    	// Checks if item is already in Cart
 		let index = this.exists( content.id );
 
 		// If item does not exist
 		if ( index === null ) {
 			throw "No item with required id!";
-    	return false;
+    		return false;
 		}
 
 		// If item exists
@@ -108,24 +108,24 @@ class Cart {
 	update( content = {} ) {
 		// Checks for required keys
 		if ( !content.id || !content.quantity ) {
-    	throw "'id' or 'quantity' is not defined!";
-    	return false;
-    } 
+	    	throw "'id' or 'quantity' is not defined!";
+	    	return false;
+	    } 
 
-    // Checks if item is already in Cart
+    	// Checks if item is already in Cart
 		let index = this.exists( content.id );
 
 		// If item does not exists
 		if ( index === null ) {
 			throw "No item with required id!";
-    	return false;
+    		return false;
 		} 
 
 		// If item exists
 		
 		// Checks if there is enough stock
 		if ( parseInt( this.products[index].stock ) < parseInt( content.quantity ) ) {
-				throw "Stock is not enough!";
+			throw "Stock is not enough!";
     		return false;
 		}
 
@@ -162,17 +162,18 @@ class Cart {
 	exists( id ) {
 		// Checks for required properties
 		if ( !id ) {
-    	throw "'id' is not defined!";
-    }
+	    	throw "'id' is not defined!";
+	    	return false;
+	    }
 
-    // Returns the selected item index
+	    // Returns the selected item index
 		for( let i in this.products ) {
-    	if ( !this.products.hasOwnProperty( i ) ) continue;
-    	if ( parseInt( this.products[i].id ) == parseInt( id ) ) return i;
-    }
+	    	if ( !this.products.hasOwnProperty( i ) ) continue;
+	    	if ( parseInt( this.products[i].id ) == parseInt( id ) ) return i;
+	    }
 
-    // Otherwise, returns null
-    return null;
+	    // Otherwise, returns null
+	    return null;
 	}
 
 	// Returns subtotal
@@ -217,12 +218,12 @@ class Cart {
 		let subtotal = 0;
 
 		for( let i in this.products ) {
-    	if ( !this.products[i].hasOwnProperty("subtotal") ) continue;
-			
+	    	if ( !this.products[i].hasOwnProperty("subtotal") ) continue;
+				
 			subtotal += parseFloat(this.products[i].subtotal);
-    }
+	    }
 
-    return subtotal;
+	    return subtotal;
 	}
 
 	calculateTax() {
