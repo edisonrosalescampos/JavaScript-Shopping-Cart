@@ -37,7 +37,7 @@ let settings = {
 Add a new item:
 
 ```javascript
-// You may also pass a value for quantity property. By default is 1. 
+// You can also pass a value for quantity property. By default is 1. 
 try {
 	SHOPPING_CART.add({
 		"id": 1,
