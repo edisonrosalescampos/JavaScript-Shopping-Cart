@@ -21,16 +21,16 @@ The class constructor method has seven initial properties:
 // {"products", "subtotal", "tax", "total", "decimals", "taxPercent", "increment"}
 ```
 
-By default, the properties mentioned above are initialized. However, you may specify other values: 
+By default, the properties mentioned above are initialized in this way. However, you may specify other values: 
 ```javascript
 let settings = {
 	"products": [], 
 	"subtotal": 0,
 	"tax": 0, 
-	"total": , 
-	"decimals", 
-	"taxPercent", 
-	"increment"
+	"total": 0, 
+	"decimals": 2, 
+	"taxPercent": 19, 
+	"increment": 1
 }
 ```
 
