@@ -12,6 +12,7 @@ Include the script *before* the ending BODY tag in HTML:
 ## Usage
 Instantiate The ShoppingCart Class:
 ```javascript
+// The constructor method receives an object type parameter
 const SHOPPING_CART = new ShoppingCart();
 ```
 
@@ -20,9 +21,10 @@ The class constructor method has seven initial properties:
 // { 'products', 'subtotal', 'tax', 'total', 'decimals', 'taxPercent', 'increment'}
 ```
 
-Add item:
+Add a new item:
 
 ```javascript
+// The product quantity by default is 1
 try {
 	SHOPPING_CART.add({
 		"id": 1,
@@ -37,3 +39,57 @@ try {
 ```
 
 **Only *id*, *stock* & *price* are required!**
+
+Update an item:
+
+```javascript
+try {
+	SHOPPING_CART.update({
+		"id": 1,
+		"quantity": 10 
+	});
+} catch(msg) {
+	console.log(msg);
+}
+```
+
+**Only *id* & *quantity* are required!**
+
+Remove an item:
+
+```javascript
+try {
+	SHOPPING_CART.remove({
+		"id": 1,
+	});
+} catch(msg) {
+	console.log(msg);
+}
+```
+
+**Only *id* is required!**
+
+Clear Cart:
+
+```javascript
+SHOPPING_CART.clear();
+```
+
+Get All Items:
+
+```javascript
+let products = SHOPPING_CART.getContent();
+```
+
+Get All Cart Items:
+
+```javascript
+let products = SHOPPING_CART.getContent();
+```
+
+
+Get Total Items Quantity:
+
+```javascript
+let products = SHOPPING_CART.getContent();
+```
